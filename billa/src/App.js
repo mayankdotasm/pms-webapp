@@ -1,17 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import {Route, Routes} from 'react-router-dom';
+import Register from './Pages/Register';
+import ViewRecord from './Pages/View_Record';
+import Sort from './Pages/Sort';
+import AboutUs from './Pages/About_us';
 
-import Header from './Components/Header';
-import Side_nav from './Components/Side_nav';
-
-//import Main_area from './Components/Main_area';
 
 function App() {
   return (
-    <>
-    <Header/>
-    <Side_nav/>
-    </>
+    
+    <div>
+      <Routes>
+        <Route path='/' element={<Register />}/>
+        <Route path='/ViewRecord' element={<ViewRecord />}/>
+        <Route path='/Sort' element={<Sort />}/>
+        <Route path='/AboutUs' element={<AboutUs />}/>
+      </Routes>
+    </div>
   );
 }
 
