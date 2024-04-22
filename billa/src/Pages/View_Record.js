@@ -1,6 +1,12 @@
+import Enter from '../Components/enter';
+
+
 function View_Record(){
     return(
-        <div>View Records</div>
+        <section>
+            <h1>Search Record</h1>
+            <Enter />
+        </section>
 
     );
 }
