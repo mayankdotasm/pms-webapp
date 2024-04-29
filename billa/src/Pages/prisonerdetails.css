@@ -1,0 +1,50 @@
+
+ .prisoner-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: linear-gradient(to right, #1a1a1a, #333);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  .details-container {
+    margin-top: 10px;
+    padding: 10px;
+    background: linear-gradient(45deg, #1a1a1a, #333); 
+    color: #fff; /* White text */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+  }
+  
+  .details-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ff9800; 
+  }
+  
+  .details-container p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .details-container hr {
+    border: none;
+    border-top: 1px solid #757575;
+    margin: 20px 0;
+  }
+  
+  .details-container .detail-label {
+    font-weight: bold;
+  }
+  
+  .details-container .detail-value {
+    color: #bdbdbd;
+  }

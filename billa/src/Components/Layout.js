@@ -11,13 +11,13 @@ function Layout(){
                         <Link to='/'>Register</Link>
                     </li>
                     <li>
-                        <Link to='/ViewRecord'>View Record</Link>
+                        <Link to='/Prisoner'>Prisoner</Link>
                     </li>
                     <li>
-                        <Link to='/Sort'>Stats</Link>
+                        <Link to='/Personnel'>Personnel</Link>
                     </li>
                     <li>
-                        <Link to='/AboutUs'>User Guide</Link>
+                        <Link to='/MoreInfo'>More Tasks</Link>
                     </li>
                 </ul>
             </nav>

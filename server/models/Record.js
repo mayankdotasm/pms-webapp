@@ -31,6 +31,35 @@ class Record {
 
         return db.query(sql, [rollno]);
     }
+
+    static findByDetails(criteria) {
+        let sql = "SELECT * FROM student WHERE";
+        const params = [];
+        const conditions = [];
+    
+        if (criteria.name) {
+            conditions.push("student_name = ?");
+            params.push(criteria.name);
+        }
+        if (criteria.course) {
+            conditions.push("course = ?");
+            params.push(criteria.course);
+        }
+        if (criteria.dob) {
+            conditions.push("dob = ?");
+            params.push(criteria.dob);
+        }
+        if (criteria.mobileNo) {
+            conditions.push("mobile_no = ?");
+            params.push(criteria.mobileNo);
+        }
+    
+        sql += " " + conditions.join(" AND ");
+    
+        return db.query(sql, params);
+    }
+    
+
 }
 
 export default Record;
