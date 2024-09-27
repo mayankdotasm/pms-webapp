@@ -20,5 +20,5 @@ router.get('/personnels/:id', findPersonnelById);
 router.post('/personnels/search', findPersonnelsByDetails);
 router.post('/warden/query', getResponse);
 router.post('/tables/:table', getTable);
-
+// router.post('/prisoners/new, addinmate);
 export default router;

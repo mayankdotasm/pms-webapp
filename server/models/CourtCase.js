@@ -6,7 +6,7 @@ class CourtCase {
         return db.query("SELECT * FROM court_case");
     }
 
-    // Add more methods as needed
+    
 }
 
 export default CourtCase;
